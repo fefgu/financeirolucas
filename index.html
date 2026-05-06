@@ -595,6 +595,7 @@ canvas{width:100%!important}
         <option value="Pix">Pix</option>
         <option value="Dinheiro">Dinheiro</option>
         <option value="Débito">Débito</option>
+        <option value="Crédito">Crédito</option>
       </select>
       <select id="h-cat" onchange="renderHistorico()"><option value="">Todas as categorias</option></select>
       <select id="h-natureza" onchange="renderHistorico()">
@@ -698,7 +699,7 @@ const CATS={
 };
 const PGTOS={
   entrada:[{label:'Pix',icon:'📲'},{label:'Dinheiro',icon:'💵'}],
-  saida:[{label:'Dinheiro',icon:'💵'},{label:'Pix',icon:'📲'},{label:'Débito',icon:'💳'}]
+  saida:[{label:'Dinheiro',icon:'💵'},{label:'Pix',icon:'📲'},{label:'Débito',icon:'💳'},{label:'Crédito',icon:'💳'}]
 };
 
 let txs=JSON.parse(localStorage.getItem('mf2_txs')||'[]');
